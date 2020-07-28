@@ -1,29 +1,26 @@
 /*!
-Theme Name: Wordpress-bootstrap-starter-theme
-Theme URI: http://underscores.me/
-Author: Me
-Author URI: http://underscores.me/
-Description: Custom theme: Wordpress-bootstrap-starter-theme, developed by Me
+Theme Name: WordPress Bootstrap Starter Theme
+Theme URI: https://github.com/stevepolitodesign/wordpress-bootstrap-starter-theme
+Author: Steve Polito
+Author URI: https://stevepolito.design/
+Description: A blank starter theme for WordPress using WPGulp, Underscores and Bootstrap 4.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: wordpress-bootstrap-starter-theme
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, bootstrap
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
-Wordpress-bootstrap-starter-theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+WordPress Bootstrap Starter Theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 // Base Styles
-@import './base/bootstrap_overrides';
+
+//@import './base/bootstrap_overrides';
 @import './base/wordpress';
 @import './base/forms';
 
 // Bootstrap Styles
 @import './bootstrap/bootstrap';
+@import './base/materiel';
