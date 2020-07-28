@@ -47,12 +47,16 @@ if ( ! function_exists( 'wordpress_bootstrap_starter_theme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(
-			array(
-				'menu-1' => esc_html__( 'Primary', 'wordpress-bootstrap-starter-theme' ),
-			)
-		);
+		// Register Custom Navigation Walker
+		require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+		
+
+		register_nav_menus( array(
+			'primary' => __( 'Primary Menu', 'THEMENAME' ),
+		) );
+		
+
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
