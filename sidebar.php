@@ -6,7 +6,6 @@
  *
  * @package Wordpress-bootstrap-starter-theme
  */
-
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }
