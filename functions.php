@@ -157,6 +157,18 @@ function wordpress_bootstrap_starter_theme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wordpress_bootstrap_starter_theme_scripts' );
+
+
+/**
+ * Setup Theme
+ */
+function mdbtheme_setup() {
+    // Add featured image support
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'mdbtheme_setup');
+
+
 /**
  * Implement the Custom Header feature.
  */
@@ -182,5 +194,7 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+
+
 }
 

@@ -2675,6 +2675,9 @@ ul.stepper li.active a .label,ul.stepper li.completed a .label{font-weight:600;c
 .treeview-colorful .treeview-colorful-items-header .fas{position:relative;color:#ffac47;-webkit-transition:all .2s linear;transition:all .2s linear;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 .treeview-colorful .treeview-colorful-items-header .fa-minus-circle{position:relative;color:#ffac47;-webkit-transition:all .2s linear;transition:all .2s linear;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
 .navbar-toggler{background-color:transparent !important}
+.entry-title{margin:3em 0}
+.row{padding-bottom:1em}
+.mb-4{margin-bottom:4rem !important}
 @media(prefers-reduced-motion:reduce){.form-control,input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea,select{-webkit-transition:none;transition:none}
 .form-check-input{-webkit-transition:none;transition:none}
 .form-range::-webkit-slider-thumb{-webkit-transition:none;transition:none}
