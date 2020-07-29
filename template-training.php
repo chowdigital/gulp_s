@@ -1,12 +1,13 @@
 <?php /* Template Name: Training*/ get_header(); ?>
 
-<div class="container">
+<main id="primary" class="site-main container">
+
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 <!--Grid row-->
 <div class="row wow fadeIn">
 <?php
 // The Query
-		$the_query = new WP_Query( 'category__not_in=17&posts_per_page=24' );
+$the_query = new WP_Query( 'cat=3&posts_per_page=24' );
 //posts_per_page=5'
 
 
@@ -47,5 +48,5 @@
   ?>
   </div>
   <!--Grid row-->
-</div>
+</main>
 <?php get_footer(); ?>

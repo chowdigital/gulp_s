@@ -2678,6 +2678,9 @@ ul.stepper li.active a .label,ul.stepper li.completed a .label{font-weight:600;c
 .entry-title{margin:3em 0}
 .row{padding-bottom:1em}
 .mb-4{margin-bottom:4rem !important}
+.carousel{margin-top:5rem}
+.carousel-caption{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);bottom:initial}
+.carousel-item{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}
 @media(prefers-reduced-motion:reduce){.form-control,input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea,select{-webkit-transition:none;transition:none}
 .form-check-input{-webkit-transition:none;transition:none}
 .form-range::-webkit-slider-thumb{-webkit-transition:none;transition:none}
