@@ -147,11 +147,21 @@ add_action( 'widgets_init', 'wordpress_bootstrap_starter_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wordpress_bootstrap_starter_theme_scripts() {
+	wp_enqueue_style( 'Font_Awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' );
 	wp_enqueue_style( 'wordpress-bootstrap-starter-theme-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'wordpress-bootstrap-starter-theme-popper', get_template_directory_uri() . '/assets/js/popper.min.js', array('jquery'), false );	
-	wp_enqueue_script( 'wordpress-bootstrap-starter-theme-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array('jquery'), false );	
-	wp_enqueue_script( 'wordpress-bootstrap-materiel', get_template_directory_uri() . '/assets/js/materiel.min.js', array('jquery'), false );	
-	wp_enqueue_script( 'wordpress-bootstrap-starter-theme-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array('customize-preview'), false );	
+	//wp_enqueue_script( 'wordpress-bootstrap-starter-theme-popper', get_template_directory_uri() . '/assets/js/popper.min.js', array('jquery'), false );	
+	//wp_enqueue_script( 'wordpress-bootstrap-starter-theme-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array('jquery'), false );	
+	//wp_enqueue_script( 'wordpress-bootstrap-materiel', get_template_directory_uri() . '/assets/js/materiel.min.js', array('jquery'), false );	
+	//wp_enqueue_script( 'wordpress-bootstrap-starter-theme-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array('customize-preview'), false );	
+
+
+	wp_enqueue_script( 'jQuery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), '3.3.1', true );
+    wp_enqueue_script( 'Tether', get_template_directory_uri() . '/assets/js/popper.min.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'Bootstrap', get_template_directory_uri() . '/assets/js/vendor.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'MDB', get_template_directory_uri() . '/assets/js/mdb.min.js', array(), '1.0.0', true );
+		
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
