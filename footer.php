@@ -11,10 +11,10 @@
 
 ?>
 <!-- Footer -->
-<footer class="page-footer font-small blue-grey pt-4">
+<footer class="page-footer font-small blue pt-4">
 
   <!-- Footer Links -->
-  <div class="container text-center text-md-left">
+  <div class="container text-md-left">
 
     <!-- Grid row -->
     <div class="row">
@@ -23,8 +23,58 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!-- Content -->
-        <h5 class="text-uppercase">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
+         <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold my-4">Sign up to our newsletter</h2>
+    <!--Section description-->
+    <p class="col-md-11">All supplied email addresses will recieve our newsletter and be added to the GCaT Mailing list.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-11 mb-md-0 mb-6">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="mdbInput">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
 
       </div>
       <!-- Grid column -->
@@ -35,21 +85,25 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+        <h2 class="h1-responsive font-weight-bold my-4">London</h2>
+    <!--Section description-->
+    <p class="no-line-break"><strong>GCaT</strong><p>
+    <p class="no-line-break"> 79 Langtons Meadow </p>
+    <p class="no-line-break">Farnham Common</p>
+    <p class="no-line-break">Buckinghamshire</p>
+    <p class="">SL2 3NQ</p>
+   
+
+
+
+
+
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            07879 282820
           </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
+    
         </ul>
 
       </div>
@@ -59,21 +113,27 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+        <h2 class="h1-responsive font-weight-bold my-4">Midlands</h2>
+    <!--Section description-->
+    <p class="no-line-break"><strong>GCaT</strong><p>
+    <p class="no-line-break">39 Eastwood Road</p>
+    <p class="no-line-break">Boston</p>
+    <p class="no-line-break">Lincolnshire</p>
+    <p class="">PE21 0PH</p>
+
+
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+          01205 369477
           </li>
           <li>
-            <a href="#!">Link 2</a>
+          07788 550074
           </li>
           <li>
-            <a href="#!">Link 3</a>
+          info@gatehousetraining.com
           </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
+          
         </ul>
 
       </div>

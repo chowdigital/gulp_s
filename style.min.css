@@ -2678,11 +2678,13 @@ ul.stepper li.active a .label,ul.stepper li.completed a .label{font-weight:600;c
 .navbar-toggler{background-color:transparent !important}
 .entry-title{margin:3em 0}
 .row{padding-bottom:1em}
-.mb-4{margin-bottom:4rem !important}
 .container-fluid,.container-sm,.container-md,.container-lg,.container-xl,.container-xxl{padding-right:0;padding-left:0}
 .carousel-caption{top:50%;left:10%;-webkit-transform:translateY(-50%);transform:translateY(-50%);bottom:initial}
 .carousel-caption .h1-responsive{color:#000a14;text-transform:uppercase;font-size:2em;font-weight:600;text-align:left}
 .carousel-item{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}
+footer{margin-top:4rem}
+footer .md-form label{color:#fff}
+.no-line-break{margin-bottom:0}
 @media(prefers-reduced-motion:reduce){.form-control,input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea,select{-webkit-transition:none;transition:none}
 .form-check-input{-webkit-transition:none;transition:none}
 .form-range::-webkit-slider-thumb{-webkit-transition:none;transition:none}

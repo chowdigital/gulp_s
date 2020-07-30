@@ -31,49 +31,70 @@
 </div>
 <main id="primary" class="site-main container">
 
+<?php
+		while ( have_posts() ) :
+			the_post();
 
+			get_template_part( 'template-parts/content', 'page' );
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+			
 
-	<?php wordpress_bootstrap_starter_theme_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wordpress-bootstrap-starter-theme' ),
-				'after'  => '</div>',
-			)
-		);
+		endwhile; // End of the loop.
 		?>
-	</div><!-- .entry-content -->
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'wordpress-bootstrap-starter-theme' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					wp_kses_post( get_the_title() )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+
+<!--Grid row-->
+<div class="row wow fadeIn">
+<?php
+// The Query
+$the_query = new WP_Query( 'cat=3&posts_per_page=4' );
+//posts_per_page=5'
+
+
+// The Loop
+		if ( $the_query->have_posts() ) {
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				$category = get_the_category(); 
+				?>		
+
+
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex flex-column">
+        <!--Featured image-->
+        <div class="view overlay hm-white-slight rounded z-depth-2 mb-4 ">
+            <?php the_post_thumbnail( 'medium-large', array( 'class'=> 'img-fluid')); ?>
+            <a href="<?php echo get_permalink() ?>">
+                <div class="mask"></div>
+            </a>
+        </div>
+
+     
+        <h4 class="mb-3 font-weight-bold dark-grey-text">
+			
+            <strong><?php the_title(); ?></strong>
+        </h4>
+       
+       
+       
+    </div>
+    <!--Grid column-->
+
+  <?php
+  
+  $counter++;
+  } // end while
+  } // end if
+  ?>
+  </div>
+  <!--Grid row-->
+  <div class="container text-center">
+
+  <button type="button" class="btn btn-blue btn-rounded">View all courses</button>
+
+
+
+
+</div>
 </main><!-- #main -->
 <?php get_footer(); ?>

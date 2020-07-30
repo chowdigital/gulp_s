@@ -3,6 +3,7 @@ body{
     //padding-top: 60px;
 
 }
+
 //remove at bottom of footer
 .page{
     margin: 0;
@@ -18,9 +19,6 @@ body{
 padding-bottom: 1em;
 }
 
-.mb-4 {
-    margin-bottom: 4rem !important;
-}
 
 .container-fluid {
     padding-right: 0rem;
@@ -98,5 +96,13 @@ padding-bottom: 1em;
 
 
 footer {
+    margin-top: 4rem;
+    .md-form label {
+        color: $white;
+    }
+}
 
+
+.no-line-break{
+    margin-bottom: 0rem;
 }
