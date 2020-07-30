@@ -1,29 +1,37 @@
 <?php /* Template Name: Home*/ get_header(); ?>
-
-
-<main id="primary" class="site-main container">
+<div class="container-fluid">
 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg">
+      <img class="d-block w-100" src="http://localhost:8888/gulp_s/wp-content/uploads/2020/07/AdobeStock_314383449_Preview.jpeg">
       <div class="carousel-caption">
-        <h1 class="h1-responsive">Welcome to GCat</h1>
+        <h1 class="h1-responsive">Welcome  <br/>to GCat</h1>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src=https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg">
+      <img class="d-block w-100" src=http://localhost:8888/gulp_s/wp-content/uploads/2020/07/12250739-1.jpg">
       <div class="carousel-caption">
-        <h1 class="h1-responsive">Welcome to GCat</h1>
+        <h1 class="h1-responsive">Welcome  <br/>to GCat</h1>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg">
+      <img class="d-block w-100" src="http://localhost:8888/gulp_s/wp-content/uploads/2020/07/279281535-2.jpg">
       <div class="carousel-caption">
-        <h1 class="h1-responsive">Welcome to GCat</h1>
+        <h1 class="h1-responsive">Welcome  <br/>to GCat</h1>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img class="d-block w-100" src="http://localhost:8888/gulp_s/wp-content/uploads/2020/07/332511826_.jpg">
+      <div class="carousel-caption">
+        <h1 class="h1-responsive">Welcome <br/>to GCat</h1>
       </div>
     </div>
   </div>
 </div>
+</div>
+<main id="primary" class="site-main container">
+
+
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
