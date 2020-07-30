@@ -23,7 +23,6 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-<a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'wordpress-bootstrap-starter-theme' ); ?></a>
 	<header id="masthead" class="site-header">
 
 		

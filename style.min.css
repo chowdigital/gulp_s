@@ -2674,6 +2674,7 @@ ul.stepper li.active a .label,ul.stepper li.completed a .label{font-weight:600;c
 .treeview-colorful .treeview-colorful-items-header .fa-angle-right{font-size:.8rem;-webkit-transition:all .2s linear;transition:all .2s linear}
 .treeview-colorful .treeview-colorful-items-header .fas{position:relative;color:#ffac47;-webkit-transition:all .2s linear;transition:all .2s linear;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 .treeview-colorful .treeview-colorful-items-header .fa-minus-circle{position:relative;color:#ffac47;-webkit-transition:all .2s linear;transition:all .2s linear;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+.page{margin:0;padding-top:60px}
 .navbar-toggler{background-color:transparent !important}
 .entry-title{margin:3em 0}
 .row{padding-bottom:1em}

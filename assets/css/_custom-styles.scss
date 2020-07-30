@@ -1,4 +1,13 @@
 // Your custom styles
+body{
+    //padding-top: 60px;
+
+}
+//remove at bottom of footer
+.page{
+    margin: 0;
+    padding-top:60px;
+}
 .navbar-toggler {
     background-color: transparent !important;
 }
@@ -85,4 +94,9 @@ padding-bottom: 1em;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     
+}
+
+
+footer {
+
 }
